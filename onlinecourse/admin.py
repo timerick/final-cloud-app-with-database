@@ -34,7 +34,7 @@ class QuestionAdmin(admin.ModelAdmin):
     inlines = [ChoiceInline]
 
 class ChoiceAdmin(admin.ModelAdmin):
-    list_display = ['choice_text', 'is_correct']
+    list_display = ['content', 'is_correct']
 
 
 admin.site.register(Course, CourseAdmin)
